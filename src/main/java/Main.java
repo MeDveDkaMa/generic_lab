@@ -30,7 +30,7 @@ public class Main {
 
             Information info1 = new Information();
             info1.getInfo(test1);
-            info.getInfo(test2);
+            info.getInfo(test22);
 
             info.printClass();
 
