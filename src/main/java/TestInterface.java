@@ -1,4 +1,7 @@
-public interface TestInterface {
+public interface TestInterface<T> {
 
-    public void PrintMessage(String message);
+    public T get(T value);
+
+    public T set(T value);
+
 }

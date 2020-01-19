@@ -1,10 +1,14 @@
-public class MyClass implements TestInterface{
+public class MyClass<T> implements TestInterface<T>{
 
-    private int a = 2;
-    private String b = "dasdasd";
+    private T value;
 
-    public void PrintMessage(String message) {
-        System.out.println(message + " from first class");
-
+    public T get(T value) {
+        return value;
     }
+
+    public T set(T value) {
+        this.value = value;
+        return value;
+    }
+
 }

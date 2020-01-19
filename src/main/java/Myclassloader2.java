@@ -16,7 +16,7 @@ public class Myclassloader2 extends ClassLoader {
             byte[]b = new byte[(int)f.length()];
             ins.read(b);
             //С помощью функции defineClass загружаем класс
-            Class c = defineClass("MyClass2", b, 0, b.length);
+            Class c = defineClass("MyClass", b, 0, b.length);
             return c;
         }catch (Exception e){
             e.printStackTrace();
